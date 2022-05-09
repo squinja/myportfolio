@@ -18,10 +18,8 @@ async function typePhrase(phrase, element, delay = 60) {
 async function deletePhrase(element) {
   const sentence = document.querySelector(element).innerHTML;
   const letters = sentence.split("");
-  // console.log(sentence, letters);
 
   for (let i = 0; i < phraseLength; i++) {
-    // console.log("meowmeow", phraseLength);
     await waitForMs(100);
     letters.pop();
     document.querySelector(element).innerHTML = letters.join("");
@@ -49,16 +47,6 @@ async function carousel(carouselList, element) {
 }
 
 carousel(carouselText, ".intro-title");
-
-// Old non-carousel functioning text changes
-// Write out title screen - loops!
-// setTimeout(() => {
-//   typePhrase("Web Experiences.", ".intro-title", 120);
-// }, 2200);
-
-// setTimeout(() => {
-//   deletePhrase(".intro-title", 120);
-// }, 5400);
 
 // Intro section - background interactive bubble functionality
 let deltaMoveBubble = {};
@@ -152,13 +140,9 @@ function moveMouse(mousePos) {
 
 function getOffset(element) {
   const rect = element.getBoundingClientRect();
-  // console.log(element);
   return {
     left: rect.left,
     top: rect.top,
-    // Don't need below with pageX
-    // left: rect.left + window.scrollX,
-    // top: rect.top + window.scrollY,
   };
 }
 
@@ -169,14 +153,14 @@ function waitForMs(ms) {
 export { typePhrase };
 
 // ROTATE HEADER EFFECTS
-const mountHeaderRotateX = () => {
+const mountHeaderAndRotateX = () => {
   window.addEventListener("load", () => {
     const title = document.getElementById("threed-title");
     title.classList.add("rotate180x");
   });
 };
 
-mountHeaderRotateX();
+mountHeaderAndRotateX();
 
 // Remove the black cover from front screen
 const blackScreen = document.querySelector(".black-cover");
@@ -187,52 +171,25 @@ setTimeout(() => {
   blackScreen.style.display = "none";
 }, 2000);
 
-// SPINE EFFECTS
-// inactive
-const scrollSpineSet = () => {
-  let lastScrollTop = 0;
-  window.addEventListener("scroll", function () {
-    let st = window.pageYOffset || document.documentElement.scrollTop;
-
-    if (st > lastScrollTop) {
-      //   document.getElementById('extended-spine').style.visibility= 'visible';
-    } else if (st < lastScrollTop) {
-      return 0;
-    }
-
-    lastScrollTop = st <= 0 ? 0 : st;
-  });
-};
-
-// scrollSpineSet();
-
 // RECENT WORKS SECTION
-// Sets starting position
-const scrollStartSet = () => {
-  document.getElementById("scrolling-flex").scrollTo(10, 0);
-};
-
-// scrollStartSet();
 
 // Sets horizontal scroll position along with vertical movement
-const scrollFlex = () => {
-  // const scroll = false;
-
+const scrollRecentWorksSectionOnMainPageScroll = () => {
   let lastScrollTop = 0;
 
   window.addEventListener("scroll", function () {
-    let st = window.pageYOffset || document.documentElement.scrollTop;
+    let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
 
-    if (st > lastScrollTop) {
+    if (scrollTop > lastScrollTop) {
       const scrollBarObject = document
         .getElementById("scrolling-flex")
         .scrollBy(1, 0);
-    } else if (st < lastScrollTop) {
+    } else if (scrollTop < lastScrollTop) {
       document.getElementById("scrolling-flex").scrollBy(-1, 0);
     }
 
-    lastScrollTop = st <= 0 ? 0 : st;
+    lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
   });
 };
 
-scrollFlex();
+scrollRecentWorksSectionOnMainPageScroll();
