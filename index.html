@@ -25,6 +25,7 @@
       <div class="navbar-right">
         <div><a class="navbar-item" href="#recentworks-section">Works</a></div>
         <div><a class="navbar-item" href="#aboutme-section">About</a></div>
+        <div><a class="navbar-item" download="Resume PDF" href="/src/assets/Emma Schaale May 2022 Resume.pdf">Resume</a></div>
         
       </div>
     </nav>
@@ -33,7 +34,7 @@
       <div class="black-cover"></div>
     </div>
 
-    <div class="intro-section">
+    <section class="intro-section" id="intro-section">
       <div class="mouse-hover"></div>
       <div class="intro-bubbles-container">
         <div class="bubble bubble1"></div>
@@ -42,80 +43,103 @@
         <div class="bubble bubble4"></div>
         <div class="bubble bubble5"></div>
       </div>
-      <div class="title-container">
+      <header class="title-container">
         
         <div class="threed-title" id="threed-title">
           <h1 class="intro-title-container">
             <span class="intro-title" id="intro-title">I Create </span>
             <span class="input-cursor"></span>
           </h1>
-          <h2>Creative front-end developer and designer</h2>
+          <h2 class="header-subtitle">Creative front-end developer and designer</h2>
         </div>
-      </div>
+      </header>
 
       <div class="scroll-note">Scroll down 👇</div>
-    </div>
+    </section>
 
-    <div class="recentworks-section">
-      <a id="recentworks-section"></a>
-      <h1 class="centeredtitle spine-position">Recent Works</h1>
-      <p class="description">A selection of projects I've worked on recently</p>
+    <section class="recentworks-section" id="recentworks-section">
+      <h2 class="section-title">Recent Works</h2>
+      <h3 class="section-description">A selection of projects I've worked on recently</h3>
       <div class="recent-scroll">Scroll 👉</div>
       <div class="scrolling-flex" id="scrolling-flex">
         <div class="scrolling-flex_item">
+          
+          <div class="recent-textbox">
+            <h4>Candy Crush Site</h4>
+            <span class="list-of-languages"><div class="inline react">React</div><div class="inline nodejs">Node.js</div><div class="inline express">Express</div><div class="inline heroku">Heroku</div><div class="inline html">HTML</div></span>
+            <p>A full-stack project to implement a game on the front-end and high score board on the back-end.</p>
+            <div class="recent-buttons">
+              <a class="recent" href="https://candy-crush-eschaale.netlify.app/" target="_blank"><button class="button" aria-label="Visit Site">Visit Site</button></a>
+              <a class="recent" href="https://github.com/squinja/candy-crush" target="_blank"><button class="button" aria-label="Source Code">Source Code</button></a>
+            </div>
+            
+          </div>
           <img
             class="scrolling-flex_item_img static"
-            alt="Pokemon Database Image"
+            alt="Candy Crush site screenshot"
+            src="src/assets/images/candy-crush.png"
+          />
+          <img
+            class="scrolling-flex_item_img active"
+            alt="Candy Crush site screenshot"
+            src="src/assets/images/candy-crush.png"
+          />
+        </a>
+      </div>
+        <div class="scrolling-flex_item">
+          <img
+            class="scrolling-flex_item_img static"
+            alt="Pokemon Database Site Screenshot"
             src="src/assets/images/pokemon-database-static.jpg"
           />
           <div class="recent-textbox">
-            <h3>Pokemon Database Site</h3>
-            <h4>React.js, PokeAPI, CSS, HTML</h4>
-            Using React.js to create a more efficient Pokemon database.
+            <h4>Pokemon Database Site</h4>
+            <span class="list-of-languages"><div class="inline react">React.js</div> <div class="inline api">PokeAPI</div><div class="inline css">CSS</div><div class="inline html">HTML</div></span>
+            <p>Using React.js to create a more efficient Pokemon database.</p>
             <div class="recent-buttons">
-              <a class="recent" href="https://squinja.github.io/pokemon-database" target="_blank"><button class="button">Visit Site</button></a>
-              <a class="recent" href="https://github.com/squinja/pokemon-database" target="_blank"><button class="button">Source Code</button></a>
+              <a class="recent" href="https://squinja.github.io/pokemon-database" target="_blank"><button class="button" aria-label="Visit Site">Visit Site</button></a>
+              <a class="recent" href="https://github.com/squinja/pokemon-database" target="_blank"><button class="button" aria-label="Source Code">Source Code</button></a>
             </div>
           </div>
           <img
             class="scrolling-flex_item_img active"
-            alt="Pokemon Database Image Gif"
+            alt="Pokemon Database Site Image Gif"
             src="src/assets/images/pokemon-database.gif"
           />
         </div>
         <div class="scrolling-flex_item">
           
             <div class="recent-textbox">
-              <h3>KoiDev Games Site</h3>
-              <h4>JavaScript, SCSS, HTML</h4>
-              I created the brand and design & developed the site.
+              <h4>KoiDev Games Site</h4>
+              <span class="list-of-languages"><div class="inline javascript">JavaScript</div><div class="inline scss">SCSS</div><div class="inline html">HTML</div></span>
+              <p>I created the brand and design & developed the site.</p>
               <div class="recent-buttons">
-                <a class="recent" href="https://koidev.games/" target="_blank"><button class="button">Visit Site</button></a>
-                <a class="recent" href="https://github.com/squinja/koidevsite" target="_blank"><button class="button">Source Code</button></a>
+                <a class="recent" href="https://koidev.games/" target="_blank"><button class="button" aria-label="Visit Site">Visit Site</button></a>
+                <a class="recent" href="https://github.com/squinja/koidevsite" target="_blank"><button class="button" aria-label="Source Code">Source Code</button></a>
               </div>
               
             </div>
             <img
               class="scrolling-flex_item_img static"
-              alt="Artificia Image"
+              alt="Artificia Site Screenshot"
               src="src/assets/images/artificia-animated-static.jpg"
             />
             <img
               class="scrolling-flex_item_img active"
-              alt="Artificia Image Gif"
+              alt="Artificia Site Image Gif"
               src="src/assets/images/artificia-web-project-optimized-gif.gif"
             />
           </a>
         </div>
         <div class="scrolling-flex_item">
           <div class="recent-textbox">
-            <h3>3D Galaxy Portfolio Site</h3>
-            <h4>Three.js, CSS, HTML</h4>
-            3D representation of my portfolio with stars as 'waypoints'. Try
-            spinning the galaxy!
+            <h4>3D Galaxy Portfolio Site</h4>
+            <span class="list-of-languages"><div class="inline threejs">Three.js</div><div class="inline css">CSS</div><div class="inline html">HTML</div></span>
+            <p>3D representation of my portfolio with stars as 'waypoints'. Try
+            spinning the galaxy!</p>
             <div class="recent-buttons">
-              <a class="recent" href="https://squinja.github.io/3d-galaxy-navigation/" target="_blank"><button class="button">Visit Site</button></a>
-              <a class="recent" href="https://github.com/squinja/3d-galaxy-navigation" target="_blank"><button class="button">Source Code</button></a>
+              <a class="recent" href="https://squinja.github.io/3d-galaxy-navigation/" target="_blank"><button class="button" aria-label="Visit Site">Visit Site</button></a>
+              <a class="recent" href="https://github.com/squinja/3d-galaxy-navigation" target="_blank"><button class="button" aria-label="Source Code">Source Code</button></a>
             </div>
           </div>
           <img
@@ -132,88 +156,168 @@
         </div>
         <div class="scrolling-flex_item">
           <div class="recent-textbox">
-            <h3>Artificia Video Game</h3>
-            <h4>Ren'Py, Aseprite</h4>
-            An independently developed visual novel game, featuring morality and
-            romance.
+            <h4>Artificia: Video Game</h4>
+            <span class="list-of-languages"><div class="inline renpy">Ren'Py</div><div class="inline aseprite">Aseprite</div></span>
+            <p>An independently developed visual novel game, featuring robots, player choice and morality.</p>
             <a
               class="recent"
               href="https://koidevgames.itch.io/artificia"
               target="_blank"
-              ><button class="button">Play In-Browser</button></a
+              ><button class="button" aria-label="Play In-Browser">Play In-Browser</button></a
             >
           </div>
           <img
             class="scrolling-flex_item_img"
-            alt="Artificia Image"
+            alt="Artificia Game Site Image"
             src="src/assets/images/artificia-image.png"
           />
         </div>
       </div>
-    </div>
+    </section>
 
-    <div class="skills-section">
-      <a id="skills-section"></a>
-      <h1 class="centeredtitle">Skills</h1>
+    <section class="skills-section" id="skills-sectio">
+      
+      <h2 class="section-title">Skills</h2>
+      <h3 class="section-description">Click to learn more.</h3>
       <div class="skills-icons">
         <ul>
-          <li>
-            <img src="src/assets/images/html.svg" alt="HTML" /> <span>HTML</span>
-          </li>
-          <li>
-            <img src="src/assets/images/css.svg" alt="CSS" /> <span>CSS</span>
-          </li>
-          <li>
-            <img src="src/assets/images/sass.svg" alt="SASS" /> <span>SCSS</span>
-          </li>
-          <li>
-            <img src="src/assets/images/Threejs-logo.svg" alt="Three JS" /> <span>Three JS</span>
-          </li>
-          <li>
-            <img src="src/assets/images/NicePng_epic-games-logo-png_3436652.png" alt="Unreal Engine" /> <span>Unreal</span>
-          </li>
-          <li>
-            <img src="src/assets/images/photoshop.png" alt="Photoshop" /> <span>Photoshop</span>
-          </li>
-          <li>
-            <img src="src/assets/images/aseprite.png" alt="Aseprite" /> <span>Aseprite</span>
-          </li>
-          <li>
-            <img src="src/assets/images/react.svg" alt="React" /> <span>React</span>
-          </li>
-          <li>
-            <img src="src/assets/images/redux.svg" alt="Redux" /> <span>Redux</span>
-          </li>
-          <li>
-            <img src="src/assets/images/express.svg" alt="Express" /> <span>Express</span>
-          </li>
-          <li>
-            <img src="src/assets/images/node.svg" alt="Node" /> <span>Node JS</span>
-          </li>
-          <li>
-            <img src="src/assets/images/heroku.svg" alt="Heroku" /> <span>Heroku</span>
-          </li>
-          <li>
-            <img src="src/assets/images/python.svg" alt="Python" /> <span>Python</span>
-          </li>
-          <li>
-            <img src="src/assets/images/flask.svg" alt="Flask" /> <span>Flask</span>
-          </li>
-          <li>
-            <img src="src/assets/images/git.svg" alt="Git" /> <span>Git</span>
-          </li>
-          <li>
-            <img src="src/assets/images/github.svg" alt="GitHub" /> <span>GitHub</span>
-          </li>
+          <div class="skills-icon-parent">
+            <div class="skills-icon-child"> 
+              <a class="skills-icon-wrapping-atag" href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank">   
+                <img src="src/assets/images/html.svg" alt="HTML" /> 
+                <span>HTML</span>
+            </a>      
+            </div>
+          </div>
+          <div class="skills-icon-parent">
+            <div class="skills-icon-child">
+              <a class="skills-icon-wrapping-atag" href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank">
+                <img src="src/assets/images/css.svg" alt="CSS" /> <span>CSS</span>
+              </a>
+            </div>
+          </div>
+          <div class="skills-icon-parent">
+            <div class="skills-icon-child">
+              <a class="skills-icon-wrapping-atag" href="https://sass-lang.com/documentation" target="_blank">
+                <img src="src/assets/images/sass.svg" alt="SASS" />
+                <span>SCSS</span>
+              </a>
+            </div>
+          </div>
+          <div class="skills-icon-parent">
+            <div class="skills-icon-child">
+              <a class="skills-icon-wrapping-atag" href="https://reactjs.org/docs/getting-started.html#try-react" target="_blank">
+                <img src="src/assets/images/react.svg" alt="React" /> 
+                <span>React</span>
+              </a>
+            </div>
+          </div>
+          <div class="skills-icon-parent">
+            <div class="skills-icon-child">
+              <a class="skills-icon-wrapping-atag" href="https://redux.js.org/" target="_blank">
+                <img src="src/assets/images/redux.svg" alt="Redux" /> 
+                <span>Redux</span>
+              </a>
+            </div>
+          </div>
+          <div class="skills-icon-parent">
+            <div class="skills-icon-child">
+              <a class="skills-icon-wrapping-atag" href="https://threejs.org/" target="_blank">
+                <img src="src/assets/images/Threejs-logo.svg" alt="Three JS" /> 
+                <span>ThreeJS</span>
+              </a>
+            </div>
+          </div>
+          <div class="skills-icon-parent">
+            <div class="skills-icon-child">
+              <a class="skills-icon-wrapping-atag" href="https://docs.unrealengine.com/5.0/en-US/2" target="_blank">
+                <img src="src/assets/images/NicePng_epic-games-logo-png_3436652.png" alt="Unreal Engine" /> 
+                <span>Unreal</span>
+              </a>
+            </div>
+          </div>
+          <div class="skills-icon-parent">
+            <div class="skills-icon-child">
+              <a class="skills-icon-wrapping-atag" href="https://helpx.adobe.com/photoshop/user-guide.html" target="_blank">
+                <img src="src/assets/images/photoshop.png" alt="Photoshop" /> 
+                <span>Photoshop</span>
+              </a>
+            </div>
+          </div>
+          <div class="skills-icon-parent">
+            <div class="skills-icon-child">
+              <a class="skills-icon-wrapping-atag" href="https://www.aseprite.org/docs/" target="_blank">
+                <img src="src/assets/images/aseprite.png" alt="Aseprite" /> 
+                <span>Aseprite</span>
+              </a>
+            </div>
+          </div>
+          
+          <div class="skills-icon-parent">
+            <div class="skills-icon-child">
+              <a class="skills-icon-wrapping-atag" href="https://expressjs.com/" target="_blank">
+                <img src="src/assets/images/express.svg" alt="Express" /> 
+                <span>Express</span>
+              </a>
+            </div>
+          </div>
+          <div class="skills-icon-parent">
+            <div class="skills-icon-child">
+              <a class="skills-icon-wrapping-atag" href="https://nodejs.org/en/docs/" target="_blank">
+                <img src="src/assets/images/node.svg" alt="Node" /> 
+                <span>Node JS</span>
+              </a>
+            </div>
+          </div>
+          <div class="skills-icon-parent">
+            <div class="skills-icon-child">
+              <a class="skills-icon-wrapping-atag" href="https://devcenter.heroku.com/articles/how-heroku-works" target="_blank">
+                <img src="src/assets/images/heroku.svg" alt="Heroku" />
+                <span>Heroku</span>
+              </a>
+            </div>
+          </div>
+          <div class="skills-icon-parent">
+            <div class="skills-icon-child">
+              <a class="skills-icon-wrapping-atag" href="https://docs.python.org/3/" target="_blank">
+                <img src="src/assets/images/python.svg" alt="Python" /> 
+                <span>Python</span>
+              </a>
+            </div>
+          </div>
+          <div class="skills-icon-parent">
+            <div class="skills-icon-child">
+              <a class="skills-icon-wrapping-atag" href="https://flask.palletsprojects.com/en/2.1.x/" target="_blank">
+                <img src="src/assets/images/flask.svg" alt="Flask" /> 
+                <span>Flask</span>
+              </a>
+            </div>
+          </div>
+          <div class="skills-icon-parent">
+            <div class="skills-icon-child">
+              <a class="skills-icon-wrapping-atag" href="https://git-scm.com/doc" target="_blank">
+                <img src="src/assets/images/git.svg" alt="Git" /> 
+                <span>Git</span>
+              </a>
+            </div>
+          </div>
+          <div class="skills-icon-parent">
+            <div class="skills-icon-child">
+              <a class="skills-icon-wrapping-atag" href="https://docs.github.com/en/get-started" target="_blank">
+                <img src="src/assets/images/github.svg" alt="GitHub" /> 
+                <span>GitHub</span>
+              </a>
+            </div>
+          </div>
           
         </ul>
 
       </div>
-    </div>
+    </section>
 
-    <div class="aboutme-section">
-      <a id="aboutme-section"></a>
-      <h1 class="centeredtitle">About Me</h1>
+    <section class="aboutme-section" id="aboutme-section">
+     
+      <h2 class="section-title">About Me</h2>
       <div class="about-social-icons">
         <div class="about-div">
           <img src="src/assets/images/behance-icon.png" alt="Behance Icon" />
@@ -239,10 +343,20 @@
           My name is Emma Schaale, and I'm a web designer and developer rolled
           into one. I combine my background in art with technical knowledge to create beautiful and engaging user experiences. I work as a front-end developer for West Virginia University, and I'm also
           currently working on publishing a video game at KoiDev Games
-          called 'Artificia'.
+          called 'Artificia'. In the future, I would like to combine my skills in game and web development, marketing, and art/design.
         </p>
       </div>
-    </div>
+    </section>
+
+
+    <footer>
+      <h2>Contact Me</h2>
+      <a class="mb-2" href="mailto: eschaale@gmail.com">eschaale@gmail[.]com</a>
+      <div></div>
+      <div class="pb-2">Emma Schaale © 2022</div>
+    </footer>
+
+
     <script src="src/script/script.js" type="module"></script>
     <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
   </body>
