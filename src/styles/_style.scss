@@ -1,9 +1,3 @@
-// NAV BAR
-
-.sitetitle {
-  padding: 2rem;
-}
-
 // HEADERS 3D EFFECTS
 
 .threed-title {
@@ -78,11 +72,31 @@
   padding: 1rem;
 }
 
+.header-subtitle {
+  font-size: 3rem;
+  font-weight: 300;
+  color: #ab9bee;
+}
+
 .navbar-right {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   width: 400px;
+}
+
+.navbar-item {
+  border-radius: 15px;
+  transition: all 0.5s;
+  font-size: 2.25rem;
+  &:hover {
+    color: #ab9bee;
+    background-color: rgba(171, 155, 238, 0.3);
+
+    padding: 0.5rem 1rem;
+    border-radius: 15px;
+    transition: all 0.5s;
+  }
 }
 
 .menu-icon {
@@ -91,22 +105,9 @@
   margin: 3rem;
 }
 
-// // SCROLL SNAP
-// .scroll-container {
-//   scroll-snap-type: y mandatory;
-//   overflow-y: scroll;
-//   overflow-x: hidden;
-//   height: 300vh;
-// }
-
-// .scroll-child {
-//   scroll-snap-align: start;
-//   // height: 100vh;
-// }
-
 // INTRO SECTION
 .intro-section {
-  height: 100vh;
+  height: 70rem;
 
   // background-color: #02021e;
 
@@ -223,10 +224,6 @@
 
   top: 25vh;
   left: 75vw;
-
-  // &:hover {
-  //   background-image: linear-gradient(225deg, #e8ecfa, #3c3cff 80%);
-  // }
 }
 
 // FRONT PAGE SECTION
@@ -250,15 +247,8 @@
 
 // RECENT WORKS SECTION
 .recentworks-section {
-  height: 100vh;
-  // background-color: #020202;
   margin-bottom: 100px;
 }
-
-// For chrome, safari
-// .scrolling-flex::-webkit-scrollbar {
-//   display: none;
-// }
 
 .scrolling-flex {
   display: flex;
@@ -276,19 +266,12 @@
     margin: 4rem;
     position: relative;
     border-radius: 25px;
-
-    // &::before {
-    //   content: "MEOW";
-    //   z-index: 10;
-    //   width: 400px;
-    //   height: 200px;
-    //   background-color: cadetblue;
-    //   position: absolute;
-    //   bottom: 0px;
-    // }
+    overflow: hidden;
 
     &:hover {
-      background-color: burlywood;
+      .recent-textbox {
+        bottom: 0px;
+      }
     }
 
     &_img {
@@ -334,21 +317,16 @@
   padding: 2rem;
   background-image: linear-gradient(
     to bottom,
-    rgba(43, 43, 49, 0.9),
-    rgba(4, 4, 4, 0.6)
+    rgba(43, 43, 49, 0.95),
+    rgba(4, 4, 4, 0.8)
   );
   font-size: 2rem;
   position: absolute;
-  bottom: 0px;
-  // opacity: 0;
-  transition: opacity 0.3s;
+  bottom: -230px;
+  transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
 
   display: flex;
   flex-direction: column;
-
-  &:hover {
-    opacity: 1;
-  }
 
   h3 {
     margin: 0 0 2rem 0;
@@ -366,9 +344,102 @@
   }
 }
 
+.list-of-languages {
+  margin: 1rem 0;
+}
+
+.inline {
+  display: inline;
+  margin: 0 2px;
+}
+
+.react {
+  background-color: #baf1ff;
+  color: #1b1b1b;
+  border-radius: 10px;
+  padding: 3px 5px;
+}
+
+.api {
+  background-color: rgb(219, 148, 162);
+  color: #1b1b1b;
+  border-radius: 10px;
+  padding: 3px 5px;
+}
+
+.css {
+  background-color: #a5b1df;
+  color: #1b1b1b;
+  border-radius: 10px;
+  padding: 3px 5px;
+}
+
+.scss {
+  background-color: #e0a4c1;
+  color: #1b1b1b;
+  border-radius: 10px;
+  padding: 3px 5px;
+}
+
+.javascript {
+  background-color: #f0e8b5;
+  color: #1b1b1b;
+  border-radius: 10px;
+  padding: 3px 5px;
+}
+
+.html {
+  background-color: #e09e8e;
+  color: #1b1b1b;
+  border-radius: 10px;
+  padding: 3px 5px;
+}
+
+.threejs {
+  background-color: #e5e5e5;
+  color: #1b1b1b;
+  border-radius: 10px;
+  padding: 3px 5px;
+}
+
+.nodejs {
+  background-color: #7fa07c;
+  color: #1b1b1b;
+  border-radius: 10px;
+  padding: 3px 5px;
+}
+
+.express {
+  background-color: #e5e5e5;
+  color: #1b1b1b;
+  border-radius: 10px;
+  padding: 3px 5px;
+}
+
+.heroku {
+  background-color: #785d9b;
+  border-radius: 10px;
+  padding: 3px 5px;
+}
+
+.renpy {
+  background-color: rgb(241, 178, 205);
+  color: #1b1b1b;
+  border-radius: 10px;
+  padding: 3px 5px;
+}
+
+.aseprite {
+  background-color: rgb(161, 163, 211);
+  color: #1b1b1b;
+  border-radius: 10px;
+  padding: 3px 5px;
+}
+
 // SKILLS SECTION
 
 .skills-section {
+  z-index: 11;
   margin-bottom: 100px;
 }
 
@@ -383,12 +454,25 @@
     justify-content: center;
   }
 
-  li {
-    list-style-type: none;
+  .skills-icon-child {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 1rem 2rem;
+    padding: 1rem;
+    border-radius: 15px;
+    z-index: 20;
+
+    border-radius: 15px;
+    transition: all 0.5s;
+    &:hover {
+      color: #ab9bee;
+      background-color: rgba(171, 155, 238, 0.3);
+
+      padding: 0.5rem 1rem;
+      border-radius: 15px;
+      transition: all 0.5s;
+    }
 
     span {
       font-size: 1.5rem;
@@ -403,10 +487,17 @@
   }
 }
 
+.skills-icon-wrapping-atag {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 // ABOUTME SECTION
 .aboutme-section {
-  height: 100vh;
+  // height: 100vh;
   // background-color: violet;
+  padding-bottom: 5rem;
 }
 
 .twosections {
@@ -418,7 +509,7 @@
 .about-description {
   font-size: 2.2rem;
   max-width: 400px;
-  margin-left: 3rem;
+  margin: 0 2rem;
 }
 
 .about-social-icons {
@@ -441,18 +532,16 @@
   max-width: 300px;
 }
 // All
-.centeredtitle {
+.section-title {
   max-width: 400px;
   margin: 0 auto;
   text-align: center;
 }
 
-.description {
-  margin: 5rem auto;
+.section-description {
+  margin: 3rem auto 5rem auto;
   text-align: center;
   max-width: 600px;
-  color: #ab9bee;
-  font-size: 2.5rem;
 }
 
 .button {
@@ -471,4 +560,21 @@
     color: #ab9bee;
     cursor: pointer;
   }
+}
+
+footer {
+  h2 {
+    font-size: 2.8rem;
+    padding-bottom: 2rem;
+  }
+  font-weight: 300;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: 2rem;
+  padding: 4rem;
+}
+
+.mb-2 {
+  margin-bottom: 2rem;
 }

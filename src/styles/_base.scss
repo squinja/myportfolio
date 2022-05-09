@@ -44,8 +44,14 @@ h1 {
 }
 
 h2 {
+  color: #e5e5e5;
+  font-size: 5rem;
+  font-weight: 500;
+}
+
+h3 {
   color: #ab9bee;
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: 300;
 }
 
@@ -61,11 +67,35 @@ a {
     color: #e5e5e5;
   }
 
-  &:hover {
-    color: #ab9bee;
-    background-color: rgba(171, 155, 238, 0.3);
+  &:focus {
+    border: 5px solid #4f83d1;
+  }
 
-    padding: 0.5rem 1rem;
-    border-radius: 15px;
+  &:disabled {
+    background-color: #a3a3a3;
+  }
+}
+
+footer {
+  background-color: rgba(171, 155, 238, 0.1);
+  border-top: 1px solid #ab9bee;
+  // min-height: 40vh;
+  text-align: center;
+}
+
+button {
+  &:focus {
+    border: 5px solid #4f83d1;
+    // border-radius: 10px;
+  }
+
+  &:active {
+    background-color: #333;
+    border-color: #333;
+    color: #eee;
+  }
+
+  &:disabled {
+    background-color: #c8c8c8;
   }
 }
