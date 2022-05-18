@@ -1,3 +1,38 @@
+@font-face {
+  font-family: "Sofia Pro Ultra Light";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Sofia Pro Ultra Light"), url("../assets/SofiaProUltraLight.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Sofia Pro Extra Light";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Sofia Pro Extra Light"), url("../assets/SofiaProExtraLight.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Sofia Pro Light";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Sofia Pro Light"), url("../assets/SofiaProLight.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Sofia Pro Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Sofia Pro Regular"), url("../assets/SofiaProRegular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Sofia Pro Medium";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Sofia Pro Medium"), url("../assets/SofiaProMedium.woff") format("woff");
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -19,7 +54,7 @@ html {
 }
 
 body {
-  font-family: "Sofia Pro", sans-serif;
+  font-family: "Sofia Pro Regular", sans-serif;
   font-size: 3rem;
   color: #e5e5e5;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#02021e), to(#040404));
@@ -45,19 +80,20 @@ nav {
 }
 
 h1 {
-  font-weight: 500;
+  font-family: "Sofia Pro Extra Light", sans-serif;
+  letter-spacing: 0.2rem;
 }
 
 h2 {
   color: #e5e5e5;
   font-size: 5rem;
-  font-weight: 500;
+  font-family: "Sofia Pro Extra Light", sans-serif;
+  letter-spacing: 0.2rem;
 }
 
 h3 {
   color: #ab9bee;
   font-size: 2.5rem;
-  font-weight: 300;
 }
 
 a {
@@ -680,6 +716,7 @@ button:disabled {
   margin: 3rem auto 5rem auto;
   text-align: center;
   max-width: 600px;
+  font-family: "Sofia Pro Light", sans-serif;
 }
 
 .button {
