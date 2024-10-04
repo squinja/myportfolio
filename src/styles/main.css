@@ -1,49 +1,14 @@
-@font-face {
-  font-family: "Sofia Pro Ultra Light";
-  font-style: normal;
-  font-weight: normal;
-  src: local("Sofia Pro Ultra Light"), url("../assets/SofiaProUltraLight.woff") format("woff");
-}
-
-@font-face {
-  font-family: "Sofia Pro Extra Light";
-  font-style: normal;
-  font-weight: normal;
-  src: local("Sofia Pro Extra Light"), url("../assets/SofiaProExtraLight.woff") format("woff");
-}
-
-@font-face {
-  font-family: "Sofia Pro Light";
-  font-style: normal;
-  font-weight: normal;
-  src: local("Sofia Pro Light"), url("../assets/SofiaProLight.woff") format("woff");
-}
-
-@font-face {
-  font-family: "Sofia Pro Regular";
-  font-style: normal;
-  font-weight: normal;
-  src: local("Sofia Pro Regular"), url("../assets/SofiaProRegular.woff") format("woff");
-}
-
-@font-face {
-  font-family: "Sofia Pro Medium";
-  font-style: normal;
-  font-weight: normal;
-  src: local("Sofia Pro Medium"), url("../assets/SofiaProMedium.woff") format("woff");
-}
-
 * {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: inherit;
-          box-sizing: inherit;
+  box-sizing: inherit;
 }
 
 html {
   font-size: 62.5%;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   overflow-x: hidden;
 }
 
@@ -54,7 +19,8 @@ html {
 }
 
 body {
-  font-family: "Sofia Pro Regular", sans-serif;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
   font-size: 3rem;
   color: #e5e5e5;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#02021e), to(#040404));
@@ -67,11 +33,11 @@ nav {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   position: absolute;
   top: 0;
   width: 95%;
@@ -80,14 +46,16 @@ nav {
 }
 
 h1 {
-  font-family: "Sofia Pro Extra Light", sans-serif;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 100;
   letter-spacing: 0.2rem;
 }
 
 h2 {
   color: #e5e5e5;
   font-size: 5rem;
-  font-family: "Sofia Pro Extra Light", sans-serif;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 100;
   letter-spacing: 0.2rem;
 }
 
@@ -104,7 +72,9 @@ a {
   padding: 0.5rem 1rem;
 }
 
-a:active, a:visited, a:link {
+a:active,
+a:visited,
+a:link {
   color: #e5e5e5;
 }
 
@@ -138,11 +108,11 @@ button:disabled {
 
 .threed-title {
   -webkit-perspective: 100;
-          perspective: 100;
+  perspective: 100;
   -webkit-transform-style: preserve-3d;
-          transform-style: preserve-3d;
+  transform-style: preserve-3d;
   -webkit-transform: rotateX(90deg) translateY(-100px);
-          transform: rotateX(90deg) translateY(-100px);
+  transform: rotateX(90deg) translateY(-100px);
   -webkit-transition: -webkit-transform 1s;
   transition: -webkit-transform 1s;
   transition: transform 1s;
@@ -152,7 +122,7 @@ button:disabled {
 
 .rotate180x {
   -webkit-transform: rotateX(0deg);
-          transform: rotateX(0deg);
+  transform: rotateX(0deg);
 }
 
 .black-cover {
@@ -175,19 +145,22 @@ button:disabled {
   background-color: white;
   margin-left: 8px;
   -webkit-animation: blink 0.6s linear infinite alternate;
-          animation: blink 0.6s linear infinite alternate;
+  animation: blink 0.6s linear infinite alternate;
 }
 
 @-webkit-keyframes blink {
   0% {
     opacity: 1;
   }
+
   40% {
     opacity: 1;
   }
+
   60% {
     opacity: 0;
   }
+
   100% {
     opacity: 0;
   }
@@ -197,12 +170,15 @@ button:disabled {
   0% {
     opacity: 1;
   }
+
   40% {
     opacity: 1;
   }
+
   60% {
     opacity: 0;
   }
+
   100% {
     opacity: 0;
   }
@@ -237,11 +213,11 @@ button:disabled {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   width: 400px;
 }
 
@@ -287,7 +263,7 @@ button:disabled {
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   z-index: 7;
 }
 
@@ -302,7 +278,7 @@ button:disabled {
   top: 90%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   z-index: 10;
 }
 
@@ -313,7 +289,7 @@ button:disabled {
   border: 3px solid whitesmoke;
   position: absolute;
   -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   opacity: 0%;
   background-color: red;
   z-index: 10;
@@ -422,7 +398,7 @@ button:disabled {
   height: 100%;
   width: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   border-radius: 25px;
 }
 
@@ -430,7 +406,9 @@ button:disabled {
   padding: 0rem;
 }
 
-.recent:active, .recent:visited, .recent:link {
+.recent:active,
+.recent:visited,
+.recent:link {
   color: #e5e5e5;
 }
 
@@ -465,8 +443,8 @@ button:disabled {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 
 .recent-textbox h3 {
@@ -584,8 +562,8 @@ button:disabled {
 .skills-icons {
   max-width: 1000px;
   -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
   margin: 5rem auto;
 }
 
@@ -594,10 +572,10 @@ button:disabled {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .skills-icons .skills-icon-child {
@@ -606,11 +584,11 @@ button:disabled {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   margin: 1rem 2rem;
   padding: 1rem;
   border-radius: 15px;
@@ -646,11 +624,11 @@ button:disabled {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .aboutme-section {
@@ -662,11 +640,11 @@ button:disabled {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .about-description {
@@ -680,11 +658,11 @@ button:disabled {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   margin: 5rem;
 }
 
@@ -698,8 +676,8 @@ button:disabled {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .about-image {
@@ -716,7 +694,8 @@ button:disabled {
   margin: 3rem auto 5rem auto;
   text-align: center;
   max-width: 600px;
-  font-family: "Sofia Pro Light", sans-serif;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
 }
 
 .button {
@@ -744,11 +723,11 @@ footer {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   font-size: 2rem;
   padding: 4rem;
 }
@@ -766,52 +745,68 @@ footer h2 {
   .sitetitle {
     font-size: 1.8rem;
   }
+
   .navbar-item {
     font-size: 2rem;
   }
+
   .intro-title-container {
     width: 100%;
   }
+
   .title-container {
     max-width: 100%;
   }
+
   .intro-section {
     margin-bottom: 10px;
   }
+
   .recentworks-section {
     margin-bottom: 10px;
   }
+
   .intro-title {
     font-size: 3rem;
   }
+
   .header-subtitle {
     font-size: 2.5rem;
   }
+
   .input-cursor {
     height: 25px;
   }
+
   h1 {
     font-size: 2.6rem;
   }
+
   h2 {
     font-size: 2.8rem;
   }
+
   .section-description {
     font-size: 2.2rem;
   }
+
   .description {
     font-size: 1.8rem;
   }
+
   .scroll-note,
   .recent-scroll {
     font-size: 2rem;
   }
+
   .social-icon-description {
     font-size: 1.8rem;
   }
+
   .about-description {
     font-size: 1.8rem;
   }
+
   .about-image {
     width: 200px;
   }
@@ -822,51 +817,63 @@ footer h2 {
     margin: 0;
     width: 100%;
   }
+
   nav .navbar-right {
     -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
   }
+
   nav .sitetitle {
     font-size: 1.75rem;
     padding: 1rem;
   }
+
   nav .navbar-item {
     font-size: 1.75rem;
   }
+
   .aboutme-section {
     margin-bottom: 3rem;
   }
+
   .twosections {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
   }
+
   .scrolling-flex_item {
     min-height: 325px;
     min-width: 325px;
   }
+
   .recent-textbox {
     width: 100%;
     height: 130px;
     font-size: 1.25rem;
     padding: 0.5rem 0.75rem 0 0.75rem;
   }
+
   .recent-textbox h3 {
     font-size: 1.7rem;
     margin: 0;
   }
+
   .recent-textbox h4 {
     font-size: 1.5rem;
   }
+
   .recent-textbox .button {
     max-width: 120px;
     font-size: 1.2rem;
     padding: 0.5rem 1rem;
   }
+
   .about-image {
     padding-bottom: 20px;
   }
 }
+
 /*# sourceMappingURL=main.css.map */
